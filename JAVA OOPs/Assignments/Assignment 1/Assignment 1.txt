@@ -1,0 +1,13 @@
+// 1.	Hello World Program: Write a Java program that prints "Hello World!!" to the console.
+class HelloWorld
+{
+	public static void main(String args[]) {
+		System.out.println("Hello, World!");
+	}		
+}
+/*
+2.	Compile with Verbose Option: Compile your Java file using the -verbose option with javac. Check the output.
+javac -verbose Hello.java
+3.	Inspect Bytecode: Use the javap tool to examine the bytecode of the compiled .class file. Observe the output.
+javap -c Hello
+*/
