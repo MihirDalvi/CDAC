@@ -1,0 +1,129 @@
+Time and Space complexity for Arrays:
+------------------------------------------------------------------------
+1. Accessing an element 1-D Array : T=O(1) S=O(1)
+
+2. Inserting at the end 1-D Array :      T=O(1) S=O(1)
+
+3. Inserting at the begining 1-D Array: T=O(n) S=O(n)
+
+4. Searching in 1-D Array (Linear search): T=O(n) S=O(1)
+
+5. Deleting an element in I-D Array: T=O(n) S=O(1)
+
+6. Transpose of a matrix in 2-D Array: T=O(m*n) S=O(m*n)
+
+Ex
+//accessing
+int []arr = {1,2,3,4,5};
+int element = arr[2]; //0(1) : constant
+
+// insertion
+int[] newArr = Arrays. copyOf(arr, arr.length+l);
+newarr [arr. length] = 6; // 0(1)
+
+int[][] matrix = {
+{1,2,3},
+{1,2,3},
+{1,2,3}
+}
+
+int element = matrix[1][1]; //0(1)
+
+Stack:
+--------
+-Linear data structure following LIFO (Last In First Out) principle.
+-Insertion and deletion at the one end called as top of the stack.
+
+LIFO (Last In First Out):
+-The last element inserted is the first one to be deleted.
+
+Representation of stack:
+1. Fixed size stack: static : Arrays implementation
+	-Has a fixed size that cannot grow or shink.
+		OVERFLOW : size is full -Overflow occurs if stack is full.
+		UNDERFLOW: stack is empty -Underflow occurs if stack is empty.
+
+2.
+Dynamic size Stack: dynamic : Linked list Representation
+	-Can grow and shrink into the stack.
+	-It does not have *overflow* and *underflow* concept
+	
+Stack operations:
+----------------------------------------------
+Insertion: Push()
+Deletion: Pop()
+Top Position: Peek() / tos() / top()	
+Underflow: isEmpty()
+Overflow: isFull()
+
+Stack Applications:
+--------------------------------------------------
+1. Balancing of symbols
+2. String reversal
+3. Redo/Undo
+4. Recursion
+5. Depth First Search (DFS)
+6. Backtracking
+7. Expression evalution
+8. Memory management
+
+
+Balancing of symbols
+
+
+Expression Evaluation:
+------------------------------------------------------
+Polish Notation:
+
+1. Infix Notation : A + B :A,B=>OPRANDS, + =>OPERATOR
+2. Prefix Notation : + A B
+3. Postfix Notation : A B +
+
+Operator Precedence:
+-------------------------------------------------------
+1. BODMAS Rule
+2. Brackets, Exponential (^) (* / + -)
+
+Example: Infix to prefix/postfix
+	a+(b/c)-d
+	------------>
+              = a+     /bc     -d
+                  \        /         /
+                   \      /         /
+	   \   /         /
+	     |          /
+	     |         /
+	+a(/bc) - d
+                      |
+	     |
+prefix:       -+a/bcd
+
+postfix       abcd/+-
+
+egs:
+a+[(b+c)+(d+e)*f]/g---------->+a [+bc + (+de) *f]/g
+
+(a+b)*c/d+e^f/g
+
+(a+b)/(c-d)
+
+
+Conversion of Postfix: a+(b*c)
+--------------------------------------
+
+
+
+opening brackets all pop when closing brackets enter the stack
+
+
+
+
+
+postfix evaluation:  7 4 -3 * 1 5 + / * ------------> -14
+	              4 3 2 * + 5 -        --------------->5	
+
+
+
+
+
+
