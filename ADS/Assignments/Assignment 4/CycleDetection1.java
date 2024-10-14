@@ -1,4 +1,4 @@
-class SinglyLinkedList1 {
+class SinglyLinkedList {
     Node head;
 
     class Node {
@@ -47,7 +47,7 @@ class SinglyLinkedList1 {
     }
 }
 
-public class CycleDetection {
+public class CycleDetection1 {
     public static void main(String[] args) {
         SinglyLinkedList list = new SinglyLinkedList();
 
