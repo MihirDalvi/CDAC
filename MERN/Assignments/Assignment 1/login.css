@@ -1,0 +1,46 @@
+.container {
+  /* background-color: aliceblue; */
+  background-color: rgba(0, 0, 0, 0.61);
+  width: 400px;
+  height: 360px;
+  margin: 150px auto;
+  padding-top: 10px;
+  text-align: center;
+  border-radius: 25px;
+  backdrop-filter: blur(20px);
+  color: bisque;
+}
+input {
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+input checkbox {
+  margin-left: 50px;
+}
+button {
+  width: 70%;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #4caf50;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 750;
+  font-size: small;
+  cursor: pointer;
+  transition: background 0.4s;
+}
+button:hover {
+  background: #1b5e20;
+}
+body {
+  background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
